@@ -1,0 +1,102 @@
+body {
+    background: linear-gradient(45deg, #FF0080, #FF8C00, #4CAF50, #008080);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite alternate;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .container {
+    width: 80%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: transparent; /* خلفية شفافة */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #80deea; /* بوردر أزرق فاتح */
+    text-align: center;
+    perspective: 500px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #222;
+  }
+  /* ... باقي أكواد names.css ... */
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* بوردر رمادي فاتح */
+    border-radius: 4px;
+    background-color: #fff; /* خلفية بيضاء للإدخال */
+    color: #333;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* تأثير سلس لتغيير البوردر والظل */
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff; /* لون البوردر لما تدوس جواه (أزرق) */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* ظل خفيف لما تدوس جواه */
+    outline: none; /* عشان نشيل البوردر الأزرق الافتراضي بتاع المتصفح */
+  }
+  button {
+    background-color: #4dd0e1; /* لون أزرق سماوي */
+    color: #004d40; /* لون أخضر غامق للنص */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #80deea, 0 2px 5px #26c6da, 0 4px 10px #00bcd4; /* تأثير 3D ولمعان */
+  }
+  
+  button:hover {
+    box-shadow: 0 0 15px #80deea, 0 4px 8px #26c6da, 0 6px 12px #00bcd4;
+    transform: translateY(-2px); /* حركة بسيطة لفوق عند الـ hover */
+  }
+  
+  button:active {
+    box-shadow: 0 0 5px #80deea, 0 1px 3px #26c6da, 0 2px 5px #00bcd4;
+    transform: translateY(1px);
+  }
+  
+  #playAlone {
+    background-color: #aed581; /* لون أخضر فاتح لزرار "العب لوحدك" */
+    color: #33691e; /* لون أخضر غامق للنص */
+    box-shadow: 0 0 10px #c5e1a5, 0 2px 5px #9ccc65, 0 4px 10px #7cb342;
+  }
+  
+  #playAlone:hover {
+    box-shadow: 0 0 15px #c5e1a5, 0 4px 8px #9ccc65, 0 6px 12px #7cb342;
+    transform: translateY(-2px);
+  }
+  
+  #playAlone:active {
+    box-shadow: 0 0 5px #c5e1a5, 0 1px 3px #9ccc65, 0 2px 5px #7cb342;
+    transform: translateY(1px);
+  }
